@@ -1,0 +1,53 @@
+:root {
+    --primary-background: white;
+    --secondary-background: darkred;
+    --primary-accent: goldenrod;
+    --shadow-accent: darkgrey;
+    --entry-field: lightgrey;
+}
+
+header {
+    background-color: var(--primary-accent)
+}
+
+header a {
+    color: var(--secondary-background);
+}
+
+header img {
+    display: flex;
+    margin: 5px;
+    width: 100%
+}
+
+header > h1 {
+    font-size: 6rem;
+}
+
+img {
+    display: block;
+    margin: 2px;
+    width: 500px;
+    height: 500px;
+}
+
+aside {
+    background: linear-gradient(
+      var(--secondary-background), 
+      var(--primary-accent)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  aside, 
+  section {
+    flex: 1 1 50%;
+  }
+  
+  aside > h2 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1px 1px 1px var(--shadow-accent);
+  }
