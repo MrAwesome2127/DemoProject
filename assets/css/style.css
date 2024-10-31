@@ -4,6 +4,7 @@
     --primary-accent: goldenrod;
     --shadow-accent: darkgrey;
     --entry-field: lightgrey;
+    --dark-box: black;
 }
 
 header {
@@ -16,7 +17,6 @@ header a {
 
 header img {
     display: flex;
-    margin: 5px;
     width: 100%
 }
 
@@ -24,11 +24,11 @@ header > h1 {
     font-size: 6rem;
 }
 
+
 img {
     display: block;
-    margin: 2px;
-    width: 500px;
-    height: 500px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 aside {
@@ -37,17 +37,116 @@ aside {
       var(--primary-accent)
     );
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    font-size: 1.2rem;
+    color: var(--primary-background);
+    padding: 20px;
   }
   
   aside, 
   section {
     flex: 1 1 50%;
+    margin: 0 30px;
   }
   
-  aside > h2 {
-    font-size: 4rem;
+  aside > h1, h2 {
+    font-size: 3rem;
     color: white;
     text-shadow: 1px 1px 1px var(--shadow-accent);
   }
+
+  aside > img {
+    max-height: 300px;
+    max-width: 100%
+}
+
+  section {
+  flex: 1;
+  margin: 0 30px; 
+}
+
+.hover-container {
+  flex: 1; 
+  margin: 0 10px; 
+  text-align: center; 
+  max-width: 300px;
+}
+
+  .floating-modal {
+    display: none;
+    position: absolute; 
+    background-color: var(--dark-box);
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px;
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  .hover-container:hover .floating-modal {
+    display: block;
+  }
+
+  .row-container {
+    background-color: var(--primary-accent);
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+  }
+
+  .row {
+    justify-content: center; 
+    align-items: flex-start;  
+  }
+
+  .image-container {
+    background-color: var(--secondary-background);
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin: 0px 30px;    
+}
+
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain; 
+}
+
+  .overlay-text {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-accent);
+    padding: 10px; 
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+
+.text-section {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center; 
+  padding-top: 100px;
+  max-width: 100%; 
+  margin: 0 auto; 
+}
+
+.text-section p {
+  margin: 0 50px; 
+  flex: 1;
+  max-width: 500px; 
+}
+
+.text-section img {
+  max-width: 500px; 
+  height: auto; 
+  margin: 50px;
+}
