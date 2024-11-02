@@ -1,0 +1,31 @@
+
+
+/*
+  Carousel - Services.html
+*/
+.container img{
+    height: 250px; 
+    object-fit: cover;
+  }
+  .carousel-item img{
+    height: 500px; 
+    object-fit: cover;
+    width: 100%;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(1.5);  
+  }

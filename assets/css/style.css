@@ -25,11 +25,11 @@ header > h1 {
 }
 
 
-img {
+/* img {
     display: block;
     max-width: 300px;
     max-height: 300px;
-}
+} */
 
 aside {
     background: linear-gradient(
@@ -50,7 +50,7 @@ aside {
     margin: 0 30px;
   }
   
-  aside > h1, h2 {
+  aside > h1 {
     font-size: 3rem;
     color: white;
     text-shadow: 1px 1px 1px var(--shadow-accent);
