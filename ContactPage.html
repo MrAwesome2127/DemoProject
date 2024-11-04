@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-      
+    <script src="ContactForm.js" defer></script>
     <title>Trashy, Not Classy!</title>
 </head>
 
@@ -52,7 +52,7 @@
         <div class="row g-3">
             <div class="col-md-7 col-lg-8">
               <h4 class="mb-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contact Us</font></font></h4>
-              <form class="needs-validation" novalidate="">
+              <form class="needs-validation" novalidate="" id="myForm">
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <label for="firstName" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">First Name</font></font></label>
@@ -81,8 +81,8 @@
                   </div>
         
                   <div class="col-12">
-                    <label for="phone-number" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phone Number</font></font></label>
-                    <input type="text" class="form-control" id="phone-number" placeholder="(555) 555-5555" required="">
+                    <label for="phoneNumber" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phone Number</font></font></label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="(555) 555-5555" required="">
                     <div class="invalid-feedback"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                       Please enter your phone number.
                     </font></font></div>
