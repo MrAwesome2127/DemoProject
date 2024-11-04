@@ -1,0 +1,5 @@
+h1, h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 1px var(--shadow-accent);
+  }
